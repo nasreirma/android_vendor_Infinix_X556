@@ -12,14 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/bin,system/bin)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/proprietary/bin,system/bin)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/data,system/data)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/proprietary/data,system/data)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/etc,system/etc)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/proprietary/etc,system/etc)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/lib,system/lib)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/proprietary/lib,system/lib)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/lib64,system/lib64)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/proprietary/lib64,system/lib64)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/vendor/lib,system/vendor/lib)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/proprietary/vendor/lib,system/vendor/lib)
