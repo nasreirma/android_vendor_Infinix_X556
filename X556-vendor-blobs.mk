@@ -23,3 +23,6 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/propri
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/proprietary/lib64,system/lib64)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/proprietary/vendor/lib,system/vendor/lib)
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/Infinix/X556/proprietary/xbin,system/xbin)
+
