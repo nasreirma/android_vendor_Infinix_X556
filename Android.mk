@@ -45,4 +45,22 @@ LOCAL_MULTILIB = both
 LOCAL_SRC_FILES_32 = vendor/lib/libged.so
 LOCAL_SRC_FILES_64 = vendor/lib64/libged.so
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE = libnvram
+LOCAL_MODULE_CLASS = SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX = .so
+LOCAL_MULTILIB = both
+LOCAL_SRC_FILES_32 = vendor/lib/libnvram.so
+LOCAL_SRC_FILES_64 = vendor/lib64/libnvram.so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE = mtk-ril
+LOCAL_MODULE_CLASS = SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX = .so
+LOCAL_MULTILIB = both
+LOCAL_SRC_FILES_32 = vendor/lib/mtk-ril.so
+LOCAL_SRC_FILES_64 = vendor/lib64/mtk-ril.so
+include $(BUILD_PREBUILT)
 endif
