@@ -1,3 +1,6 @@
+on post-fs-data
+    mkdir /data/agps_supl 0771 gps system
+
 service agpsd /vendor/bin/mtk_agpsd
     class main
     socket agpsd stream 660 gps system

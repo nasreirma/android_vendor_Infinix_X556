@@ -39,6 +39,7 @@ TRC_BTIF=6
 TRC_GAP=6
 TRC_BNEP=6
 TRC_PAN=6
+TRC_B3DS=6
 
 ###################################
 #                                 #

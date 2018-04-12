@@ -18,4 +18,5 @@ service stop_modem /vendor/bin/md_ctrl 0
 service start_modem /vendor/bin/md_ctrl 1
     class main
     disabled
-    oneshot
+    oneshot    
+    
