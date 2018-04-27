@@ -3,5 +3,4 @@ service surfaceflinger /system/bin/surfaceflinger
     user system
     group graphics drmrpc readproc
     onrestart restart zygote
-    onrestart setprop sys.sf.restart 1
-    writepid /dev/stune/foreground/tasks
+    writepid /sys/fs/cgroup/stune/foreground/tasks
