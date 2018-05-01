@@ -15,7 +15,7 @@ LOCAL_MODULE = libmtkcam_fwkutils
 LOCAL_MODULE_CLASS = SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX = .so
 LOCAL_MULTILIB = both
-LOCAL_SRC_FILES_32 = vendor/lib/libmtkcam_fwkutils.so
+LOCAL_SRC_FILES_32 = vendor/lib/libmtkcam_fwkutils.sov
 LOCAL_SRC_FILES_64 = vendor/lib64/libmtkcam_fwkutils.so
 include $(BUILD_PREBUILT)
  
@@ -29,23 +29,47 @@ LOCAL_SRC_FILES_64 = vendor/lib64/libdpframework.so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE = libstagefright_color_conversion
-LOCAL_MODULE_CLASS = STATIC_LIBRARIES
-LOCAL_MODULE_SUFFIX = .a
-LOCAL_UNINSTALLABLE_MODULE = true
-LOCAL_MULTILIB = 64
-LOCAL_SHARED_LIBRARIES_64 = libdpframework
-LOCAL_SRC_FILES_64 = libstagefright_color_conversion/libstagefright_color_conversion_64.a
-include $(BUILD_PREBUILT)
- 
-include $(CLEAR_VARS)
-LOCAL_MODULE = libstagefright_color_conversion
-LOCAL_MODULE_CLASS = STATIC_LIBRARIES
-LOCAL_MODULE_SUFFIX = .a
-LOCAL_UNINSTALLABLE_MODULE = true
-LOCAL_MULTILIB = 32
-LOCAL_SHARED_LIBRARIES_32 = libdpframework
-LOCAL_SRC_FILES_32 = libstagefright_color_conversion/libstagefright_color_conversion_32.a
+LOCAL_MODULE = libion_mtk
+LOCAL_MODULE_CLASS = SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX = .so
+LOCAL_MULTILIB = both
+LOCAL_SRC_FILES_32 = vendor/lib/libion_mtk.so
+LOCAL_SRC_FILES_64 = vendor/lib64/libion_mtk.so
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE = libged
+LOCAL_MODULE_CLASS = SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX = .so
+LOCAL_MULTILIB = both
+LOCAL_SRC_FILES_32 = vendor/lib/libged.so
+LOCAL_SRC_FILES_64 = vendor/lib64/libged.so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE = libnvram
+LOCAL_MODULE_CLASS = SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX = .so
+LOCAL_MULTILIB = both
+LOCAL_SRC_FILES_32 = vendor/lib/libnvram.so
+LOCAL_SRC_FILES_64 = vendor/lib64/libnvram.so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE = mtk-ril
+LOCAL_MODULE_CLASS = SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX = .so
+LOCAL_MULTILIB = both
+LOCAL_SRC_FILES_32 = vendor/lib/mtk-ril.so
+LOCAL_SRC_FILES_64 = vendor/lib64/mtk-ril.so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE = librilmtk
+LOCAL_MODULE_CLASS = SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX = .so
+LOCAL_MULTILIB = both
+LOCAL_SRC_FILES_32 = vendor/lib/librilmtk.so
+LOCAL_SRC_FILES_64 = vendor/lib64/librilmtk.so
+include $(BUILD_PREBUILT)
 endif
